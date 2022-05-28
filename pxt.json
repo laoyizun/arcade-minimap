@@ -1,6 +1,6 @@
 {
     "name": "arcade-minimap",
-    "version": "0.6.1",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "device": "*"
