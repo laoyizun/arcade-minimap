@@ -36,6 +36,7 @@ namespace minimap {
     }
 
     //% block="minimap || %scale scale with border $borderWidth $borderColor"
+    //%block.loc.zh-Cn="小地图|| 设置地图大小为 $scale 设置边界大小为 $borderWidth 设置边界颜色为 $borderColor"
     //% blockId="create_minimap"
     //% expandableArgumentMode="toggle"
     //% scale.defl=MinimapScale.Half
@@ -88,6 +89,7 @@ namespace minimap {
     }
 
     //% block="$minimap image"
+    //% block.loc.zh-Cn = "$minimap 地图图像"
     //% minimap.shadow=create_minimap
     //% group="Minimap" weight=90 blockGap=8
     export function getImage(minimap: Minimap): Image {
@@ -95,6 +97,7 @@ namespace minimap {
     }
 
     //% block="draw $sprite on $minimap || at $spriteScale scale"
+    //% block.loc.zh-Cn="在 $minimap 上画出 $sprite || 设置精灵大小为 $spriteScale"
     //% minimap.shadow=variables_get
     //% minimap.defl=myMinimap
     //% sprite.shadow=variables_get
