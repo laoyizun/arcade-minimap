@@ -11,10 +11,13 @@ enum MinimapSpriteScale {
     Quadruple,
     Octuple
 }
-
 //% color=#cfab0c icon="\uf278"
-//% groups='["Minimap", "Sprites"]'
-namespace minimap {
+//% groups='["minimap", "Sprites"]'
+namespace minimap{}
+//% color=#cfab0c icon="\uf278"
+//% groups='["小地图", "Sprites"]'
+namespace 小地图{
+
     // TODO: cannot extend native interfaces (https://github.com/microsoft/pxt/issues/6859),
     //      would prefer to extend Image
     export interface Minimap {
@@ -36,7 +39,7 @@ namespace minimap {
     }
 
     //% block="minimap || %scale scale with border $borderWidth $borderColor"
-    //%block.loc.zh-Cn="小地图|| 设置地图大小为 $scale 设置边界大小为 $borderWidth 设置边界颜色为 $borderColor"
+    //% block.loc.zh-Cn="小地图|| 设置地图大小为 $scale 边界大小为 $borderWidth 边界颜色为 $borderColor"
     //% blockId="create_minimap"
     //% expandableArgumentMode="toggle"
     //% scale.defl=MinimapScale.Half
@@ -89,7 +92,7 @@ namespace minimap {
     }
 
     //% block="$minimap image"
-    //% block.loc.zh-Cn = "$minimap 地图图像"
+    //% block.loc.zh-Cn="$minimap 地图图像"
     //% minimap.shadow=create_minimap
     //% group="Minimap" weight=90 blockGap=8
     export function getImage(minimap: Minimap): Image {
